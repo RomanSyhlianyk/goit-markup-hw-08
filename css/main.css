@@ -118,7 +118,7 @@ p {
   letter-spacing: 0.03em;
   color: #000000;
 }
-.nav__logo--accent {
+.nav__logo--current {
   color: #2196f3;
 }
 @media screen and (min-width: 768px) {
