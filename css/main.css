@@ -1102,9 +1102,14 @@ p {
   margin: 0;
   color: #ffffff;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
+  font-size: 16px;
+  line-height: 1.87;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__thumb-text {
+    font-size: 18px;
+  }
 }
 .portfolio__desc-box {
   padding-top: 20px;
@@ -1118,10 +1123,15 @@ p {
 }
 .portfolio__desc-title {
   margin-bottom: 4px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__desc-title {
+    font-size: 16px;
+  }
 }
 .portfolio__desc-text {
   font-size: 16px;
