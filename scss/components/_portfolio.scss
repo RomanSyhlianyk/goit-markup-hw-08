@@ -1,11 +1,23 @@
 .portfolio {
-    padding: 94px 0;
+    padding: 60px 0;
+    @media screen and (min-width:1200px) {
+        padding: 94px 0;
+    }
 
     &__button-list{
         display: flex;
-        justify-content: center;
-        margin-bottom: 50px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 320px;
+        margin-bottom: 40px;
         gap:8px;
+        @media screen and (min-width:480px) {
+            width: 326px;
+        }
+        @media screen and (min-width:768px) {
+            width: 100%;
+            justify-content: center;
+        }
     }
 
     &__button{
@@ -39,7 +51,13 @@
     }
 
     &__item{
-        max-width: 370px;
+        width: auto;
+        @media screen and (min-width:768px) {
+            width: calc((100% - 30px)/2);
+        }
+        @media screen and (min-width:1200px) {
+            width: calc((100% - 61px)/3);
+        }
     }
 
     &__link{

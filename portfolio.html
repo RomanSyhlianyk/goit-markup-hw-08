@@ -19,8 +19,10 @@
     <!-- --------HEADER-------  -->
     <header class="header">
       <div class="menu__container" data-menu>
-        <a class=" menu__link" href="index.html">Студія</a>
-        <a class="menu__link--current menu__link" href="portfolio.html ">Портфоліо</a>
+        <a class="menu__link" href="index.html">Студія</a>
+        <a class="menu__link--current menu__link" href="portfolio.html "
+          >Портфоліо</a
+        >
         <a class="menu__link" href="#">Контакти</a>
         <a class="menu__link-tel" href="tel:+380961111111">+38 096 111 11 11</a>
         <a class="menu__link-mail" href="mailto:info@devstudio.com"
@@ -127,11 +129,34 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./img/img/portfolio-1.jpg"
-                    alt="Ноутбук"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio/d1.jpg    1x,
+                        ./img/portfolio/d1-2x.jpg 2x,
+                        ./img/portfolio/d1-3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/t1.jpg    1x,
+                        ./img/portfolio/t1-2x.jpg 2x,
+                        ./img/portfolio/t1-3x.jpg 3x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      srcset="
+                        ./img/portfolio/m1.jpg    1x,
+                        ./img/portfolio/m1-2x.jpg 2x,
+                        ./img/portfolio/m1-3x.jpg 3x
+                      "
+                      src="./img/portfolio/m1.jpg"
+                      alt="Ноутбук"
+                      width="370"
+                    />
+                  </picture>
                   <div class="portfolio__thumb-desc">
                     <p class="portfolio__thumb-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -150,11 +175,34 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./img/img/portfolio-2.jpg"
-                    alt="Гра в баскетбол"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio/d2.jpg    1x,
+                        ./img/portfolio/d2-2x.jpg 2x,
+                        ./img/portfolio/d2-3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/t2.jpg    1x,
+                        ./img/portfolio/t2-2x.jpg 2x,
+                        ./img/portfolio/t2-3x.jpg 3x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      srcset="
+                        ./img/portfolio/m2.jpg    1x,
+                        ./img/portfolio/m2-2x.jpg 2x,
+                        ./img/portfolio/m2-3x.jpg 3x
+                      "
+                      src="./img/portfolio/m2.jpg"
+                      alt="Баскетбол"
+                      width="370"
+                    />
+                  </picture>
                   <div class="portfolio__thumb-desc">
                     <p class="portfolio__thumb-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -175,11 +223,34 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./img/img/portfolio-3.jpg"
-                    alt="Логотип ресторану"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio/d3.jpg    1x,
+                        ./img/portfolio/d3-2x.jpg 2x,
+                        ./img/portfolio/d3-3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/t3.jpg    1x,
+                        ./img/portfolio/t3-2x.jpg 2x,
+                        ./img/portfolio/t3-3x.jpg 3x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      srcset="
+                        ./img/portfolio/m3.jpg    1x,
+                        ./img/portfolio/m3-2x.jpg 2x,
+                        ./img/portfolio/m3-3x.jpg 3x
+                      "
+                      src="./img/portfolio/m3.jpg"
+                      alt="Логотип ресторану"
+                      width="370"
+                    />
+                  </picture>
                   <div class="portfolio__thumb-desc">
                     <p class="portfolio__thumb-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -191,7 +262,9 @@
                 </div>
 
                 <div class="portfolio__desc-box">
-                  <h2 class="portfolio__desc-title">Ресторан <span lang="en">Seafood</span></h2>
+                  <h2 class="portfolio__desc-title">
+                    Ресторан <span lang="en">Seafood</span>
+                  </h2>
                   <p class="portfolio__desc-text">Додаток</p>
                 </div>
               </a>
@@ -199,11 +272,34 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./img/img/portfolio-4.jpg"
-                    alt="Навушники"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio/d4.jpg    1x,
+                        ./img/portfolio/d4-2x.jpg 2x,
+                        ./img/portfolio/d4-3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/t4.jpg    1x,
+                        ./img/portfolio/t4-2x.jpg 2x,
+                        ./img/portfolio/t4-3x.jpg 3x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      srcset="
+                        ./img/portfolio/m4.jpg    1x,
+                        ./img/portfolio/m4-2x.jpg 2x,
+                        ./img/portfolio/m4-3x.jpg 3x
+                      "
+                      src="./img/portfolio/m4.jpg"
+                      alt="Навушники"
+                      width="370"
+                    />
+                  </picture>
                   <div class="portfolio__thumb-desc">
                     <p class="portfolio__thumb-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -214,7 +310,9 @@
                   </div>
                 </div>
                 <div class="portfolio__desc-box">
-                  <h2 class="portfolio__desc-title">Проєкт <span lang="en">Prime</span></h2>
+                  <h2 class="portfolio__desc-title">
+                    Проєкт <span lang="en">Prime</span>
+                  </h2>
                   <p class="portfolio__desc-text">Маркетинг</p>
                 </div>
               </a>
@@ -222,11 +320,34 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./img/img/portfolio-5.jpg"
-                    alt="Коробки"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio/d5.jpg    1x,
+                        ./img/portfolio/d5-2x.jpg 2x,
+                        ./img/portfolio/d5-3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/t5.jpg    1x,
+                        ./img/portfolio/t5-2x.jpg 2x,
+                        ./img/portfolio/t5-3x.jpg 3x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      srcset="
+                        ./img/portfolio/m5.jpg   1x,
+                        ./img/portfolio/m5-2x.jpg 2x,
+                        ./img/portfolio/m5-3x.jpg 3x
+                      "
+                      src="./img/portfolio/m5.jpg"
+                      alt="Коробки"
+                      width="370"
+                    />
+                  </picture>
                   <div class="portfolio__thumb-desc">
                     <p class="portfolio__thumb-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -237,7 +358,9 @@
                   </div>
                 </div>
                 <div class="portfolio__desc-box">
-                  <h2 class="portfolio__desc-title">Проєкт <span lang="en">Boxes</span></h2>
+                  <h2 class="portfolio__desc-title">
+                    Проєкт <span lang="en">Boxes</span>
+                  </h2>
                   <p class="portfolio__desc-text">Додаток</p>
                 </div>
               </a>
@@ -245,11 +368,34 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./img/img/portfolio-6.jpg"
-                    alt="Комп'ютер"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio/d6.jpg    1x,
+                        ./img/portfolio/d6-2x.jpg 2x,
+                        ./img/portfolio/d6-3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/t6.jpg    1x,
+                        ./img/portfolio/t6-2x.jpg 2x,
+                        ./img/portfolio/t6-3x.jpg 3x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      srcset="
+                        ./img/portfolio/m6.jpg   1x,
+                        ./img/portfolio/m6-2x.jpg 2x,
+                        ./img/portfolio/m6-3x.jpg 3x
+                      "
+                      src="./img/portfolio/m6.jpg"
+                      alt="Комп'ютер"
+                      width="370"
+                    />
+                  </picture>
                   <div class="portfolio__thumb-desc">
                     <p class="portfolio__thumb-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -260,19 +406,44 @@
                   </div>
                 </div>
                 <div class="portfolio__desc-box">
-                  <h2 lang="en" class="portfolio__desc-title">Inspiration has no Borders</h2>
+                  <h2 lang="en" class="portfolio__desc-title">
+                    Inspiration has no Borders
+                  </h2>
                   <p class="portfolio__desc-text">Веб-сайт</p>
                 </div>
               </a>
             </li>
             <li class="portfolio__item">
-              <a href="#" class="portfolio__link ">
+              <a href="#" class="portfolio__link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./img/img/portfolio-7.jpg"
-                    alt="Журнал"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio/d7.jpg    1x,
+                        ./img/portfolio/d7-2x.jpg 2x,
+                        ./img/portfolio/d7-3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/t7.jpg    1x,
+                        ./img/portfolio/t7-2x.jpg 2x,
+                        ./img/portfolio/t7-3x.jpg 3x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      srcset="
+                        ./img/portfolio/m7.jpg   1x,
+                        ./img/portfolio/m7-2x.jpg 2x,
+                        ./img/portfolio/m7-3x.jpg 3x
+                      "
+                      src="./img/portfolio/m7.jpg"
+                      alt="Журнал"
+                      width="370"
+                    />
+                  </picture>
                   <div class="portfolio__thumb-desc">
                     <p class="portfolio__thumb-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -293,11 +464,34 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./img/img/portfolio-8.jpg"
-                    alt="Етикетка"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio/d8.jpg    1x,
+                        ./img/portfolio/d8-2x.jpg 2x,
+                        ./img/portfolio/d8-3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/t8.jpg    1x,
+                        ./img/portfolio/t8-2x.jpg 2x,
+                        ./img/portfolio/t8-3x.jpg 3x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      srcset="
+                        ./img/portfolio/m8.jpg   1x,
+                        ./img/portfolio/m8-2x.jpg 2x,
+                        ./img/portfolio/m8-3x.jpg 3x
+                      "
+                      src="./img/portfolio/m8.jpg"
+                      alt="Етикетка"
+                      width="370"
+                    />
+                  </picture>
                   <div class="portfolio__thumb-desc">
                     <p class="portfolio__thumb-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -308,7 +502,9 @@
                   </div>
                 </div>
                 <div class="portfolio__desc-box">
-                  <h2 class="portfolio__desc-title">Проєкт <span lang="en">LAB</span></h2>
+                  <h2 class="portfolio__desc-title">
+                    Проєкт <span lang="en">LAB</span>
+                  </h2>
                   <p class="portfolio__desc-text">Маркетинг</p>
                 </div>
               </a>
@@ -316,11 +512,34 @@
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./img/img/portfolio-9.jpg"
-                    alt="Людина працює за ноутбуком"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/portfolio/d9.jpg    1x,
+                        ./img/portfolio/d9-2x.jpg 2x,
+                        ./img/portfolio/d9-3x.jpg 3x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/portfolio/t9.jpg    1x,
+                        ./img/portfolio/t9-2x.jpg 2x,
+                        ./img/portfolio/t9-3x.jpg 3x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      srcset="
+                        ./img/portfolio/m9.jpg   1x,
+                        ./img/portfolio/m9-2x.jpg 2x,
+                        ./img/portfolio/m9-3x.jpg 3x
+                      "
+                      src="./img/portfolio/m9.jpg"
+                      alt="Людина працює за ноутбуком"
+                      width="370"
+                    />
+                  </picture>
                   <div class="portfolio__thumb-desc">
                     <p class="portfolio__thumb-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -331,7 +550,9 @@
                   </div>
                 </div>
                 <div class="portfolio__desc-box">
-                  <h2 lang="en" class="portfolio__desc-title">Growing Business</h2>
+                  <h2 lang="en" class="portfolio__desc-title">
+                    Growing Business
+                  </h2>
                   <p class="portfolio__desc-text">Додаток</p>
                 </div>
               </a>

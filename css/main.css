@@ -66,7 +66,7 @@ p {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 5;
   transition-property: visibility;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -496,6 +496,11 @@ p {
   letter-spacing: 0.03em;
   color: #212121;
 }
+@media screen and (min-width: 1200px) {
+  .our-team__title {
+    margin-bottom: 50px;
+  }
+}
 .our-team__list {
   display: flex;
   justify-content: space-between;
@@ -576,6 +581,11 @@ p {
   text-align: center;
   color: #212121;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .customers__title {
+    margin-bottom: 50px;
+  }
 }
 .customers__list {
   display: flex;
@@ -800,7 +810,7 @@ p {
   left: 0;
   margin: auto;
   padding: 40px;
-  width: 450px;
+  width: auto;
   height: 609px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -808,6 +818,11 @@ p {
   transition-property: scale;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -983,13 +998,31 @@ p {
 }
 
 .portfolio {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding: 94px 0;
+  }
 }
 .portfolio__button-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 320px;
+  margin-bottom: 40px;
   gap: 8px;
+}
+@media screen and (min-width: 480px) {
+  .portfolio__button-list {
+    width: 326px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__button-list {
+    width: 100%;
+    justify-content: center;
+  }
 }
 .portfolio__button {
   border-radius: 4px;
@@ -1018,7 +1051,17 @@ p {
   gap: 30px;
 }
 .portfolio__item {
-  max-width: 370px;
+  width: auto;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    width: calc((100% - 61px) / 3);
+  }
 }
 .portfolio__link {
   transition-property: box-shadow;

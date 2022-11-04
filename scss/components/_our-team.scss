@@ -8,7 +8,10 @@
     &__title{
         margin-bottom: 30px;
         text-align: center;
-        @include font(700,36px,42px,0.03em,$black-text-color);  
+        @include font(700,36px,42px,0.03em,$black-text-color); 
+        @media screen and (min-width:1200px) {
+            margin-bottom: 50px;
+        }
     }
 
     &__list{

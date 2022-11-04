@@ -7,7 +7,7 @@
     left: 0;
     margin: auto;
     padding: 40px;
-    width: 450px;
+    width: auto;
     height: 609px;
     background-color: $bg-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -16,6 +16,9 @@
     transition-property: scale;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width:480px){
+        width: 450px;
+    }
     @media screen and (min-width:1200px) {
         width: 528px;
         height: 581px;
