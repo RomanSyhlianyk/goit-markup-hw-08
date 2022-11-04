@@ -118,7 +118,7 @@ p {
   letter-spacing: 0.03em;
   color: #000000;
 }
-.nav__logo--current {
+.nav__logo--accent {
   color: #2196f3;
 }
 @media screen and (min-width: 768px) {
@@ -137,7 +137,7 @@ p {
   .nav__burger-button {
     position: absolute;
     z-index: 3;
-    top: 16px;
+    top: 20px;
     right: 16px;
     margin: 0;
     margin-left: auto;
@@ -675,6 +675,11 @@ p {
 }
 .footer__address-box {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__address-box {
+    margin-bottom: 0;
+  }
 }
 .footer__address-item:not(:last-child) {
   margin-bottom: 8px;

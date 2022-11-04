@@ -13,7 +13,7 @@
         letter-spacing: 0.03em;
         color: $header-logo-color;
 
-        &--current{
+        &--accent{
             color: $accent-color;
         }
 
@@ -33,7 +33,7 @@
         @media screen and (max-width: 768px) {
          position: absolute;   
         z-index: 3;
-        top: 16px;
+        top: 20px;
         right: 16px;
         margin: 0;
         margin-left: auto;

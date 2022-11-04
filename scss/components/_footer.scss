@@ -41,6 +41,9 @@
 
     &__address-box{
         margin-bottom: 60px;
+        @media screen and (min-width:1200px) {
+            margin-bottom: 0;
+        }
     }
 
     &__address-item{
