@@ -1,0 +1,39 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;}
+
+body {
+    font-family: "Roboto";
+    font-size: 14px;
+    background-color:$bg-color;
+    color: $grey-text-color;
+    letter-spacing: 0.03em;
+}
+
+a,
+img {
+    display: block;
+    text-decoration: none;
+}
+
+img{
+    width:100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}

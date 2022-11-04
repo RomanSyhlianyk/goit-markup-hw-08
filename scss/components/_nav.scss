@@ -1,0 +1,117 @@
+.nav{
+    display: flex;
+    align-items: center;
+    
+
+    &__logo{
+        
+        padding: 16px 0;
+        font-family: "Raleway";
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        color: $header-logo-color;
+
+        &--accent{
+            color: $accent-color;
+        }
+
+        @media screen and(min-width:768px) {
+            margin-right: 87px;
+        }
+
+        @media screen and (min-width:1200px) {
+            margin-right: 92px;
+            font-size: 26px;
+            line-height: 1.19;
+        }
+    }
+
+    &__burger-button{
+
+        @media screen and (max-width: 768px) {
+         position: absolute;   
+        z-index: 3;
+        top: 16px;
+        right: 16px;
+        margin: 0;
+        margin-left: auto;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background-color: transparent;
+        border:none;
+
+        
+        }
+        @media screen and (min-width:768px) {
+            display: none;
+        }
+
+    }
+
+    
+
+    &__icon-close{
+        display: none;
+    }
+
+    &__burger-button.is-open .nav__icon-close {
+        display: block;
+    }
+
+    &__burger-button.is-open .nav__icon-open{
+        display: none;
+    }
+        
+
+    &__list{
+        display: none;
+
+        @media screen and (min-width:768px){
+            @include flex($gap: 50px);
+        }
+
+        
+        
+
+    }
+
+    &__item{
+        position: relative;
+        min-width: 48px;
+    }
+
+    &__link{
+        padding: 32px 0;
+        @include font(500, 14px, 16px, 0.02em, $black-text-color);
+        @include transition;
+        
+        &:hover,
+        &:focus{
+            color: $accent-color;
+        }
+        
+        &--current{
+            color: $accent-color;
+        }
+
+        &--current::after{
+            position: absolute;
+            display: flex;
+            content: "";
+            bottom: -1px;
+            left: 0;
+            height: 4px;
+            width: 100%;
+            border: 1px solid transparent;
+            border-radius: 2px;
+            background-color: $accent-color;
+        }
+    }
+
+    
+}

@@ -1,0 +1,6 @@
+.is-hidden {
+    visibility: hidden;
+    & .modal{
+        scale: 0;
+    }
+}

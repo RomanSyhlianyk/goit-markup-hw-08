@@ -1,0 +1,17 @@
+.header{
+    position: relative;
+    border-bottom: 1px solid $header-border-color;
+    
+    &__container{
+        position: relative;
+    }
+    
+    &__row{
+        
+        @include flex;
+                
+    } 
+   
+
+    
+}

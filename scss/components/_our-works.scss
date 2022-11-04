@@ -1,0 +1,38 @@
+.our-works{
+    padding-bottom: 94px;
+    display: none;
+    @media screen and (min-width:1200px) {
+        display: block;        
+    }
+
+    &__title{
+        margin-bottom: 50px;
+        @include font (700,36px,42px,0.03em, $black-text-color);
+        text-align: center;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img-box{
+        position: relative;
+    }
+
+    &__desc{
+        position: absolute;
+        @include flex ($jc:center);
+        left: 0;
+        bottom: 0;
+        height: 70px;
+        width: 100%;
+        background-color: rgba(47, 48, 58, 0.8);
+    }
+
+    &__text{
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $white-text-color;
+    }
+}

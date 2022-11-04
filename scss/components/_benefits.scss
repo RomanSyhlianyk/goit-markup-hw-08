@@ -1,0 +1,51 @@
+.benefits {
+    padding: 60px 0;
+    @media screen and(min-width:1200px) {
+        padding: 94px 0;        
+    }
+
+    &__box{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        
+    }
+
+    &__card{
+        width: 100%;
+
+        @media screen and (min-width:768px) {
+            width:calc((100% - 30px)/2) ;
+            @media screen and (min-width:1200px) {
+                    width: calc((100% - 90px)/4);
+                }
+        }
+    }
+
+    &__icon-box{
+        @include flex($jc:center);
+        margin-bottom: 30px;
+        width: 100%;
+        height: 120px;
+        border-radius: 4px;
+        background-color: $grey-bg-colof;
+
+        
+    }
+
+    &__icon{
+        width: 70px;
+        height: 70px;
+    }
+
+    &__card-title{
+        margin-bottom: 10px;
+        @include font ($fw:700,$lh:16px,$clr:$black-text-color);
+        text-transform: uppercase;
+    }
+
+    &__card-desc{
+        @include font;
+    }
+} 

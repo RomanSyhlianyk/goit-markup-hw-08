@@ -1,0 +1,117 @@
+.portfolio {
+    padding: 94px 0;
+
+    &__button-list{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        gap:8px;
+    }
+
+    &__button{
+        border-radius: 4px;
+        padding: 6px 22px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        text-align: center;
+        letter-spacing: 0.03em;
+        background-color: $grey-bg-colof;
+        color: $black-text-color;
+        border-style: none;
+        cursor: pointer;
+        transition-property: color, background-color, box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus{
+            color: $white-text-color;
+            background-color: $accent-color;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__item{
+        max-width: 370px;
+    }
+
+    &__link{
+        @include transition (box-shadow);
+        &:hover,
+        &:focus{
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+                    1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+
+        &:hover .portfolio__thumb-desc,
+        &:focus .portfolio__thumb-desc{
+            transform: translateY(0);
+        }
+    }
+
+    &__thumb{
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__thumb-desc{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        padding: 0 24px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(33, 150, 243, 0.9);
+        transform: translateY(100%);
+        transition-property: transform;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__thumb-text{
+        margin: 0;
+        color: $white-text-color;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.56;
+        letter-spacing: 0.03em;
+    }
+
+    &__desc-box{
+        padding-top: 20px;
+        padding-left: 23px;
+        padding-right: 23px;
+        padding-bottom: 19px;
+        border-right: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
+        border-left: 1px solid $border-color;
+        background-color: $bg-color;
+    }
+
+    &__desc-title{
+        margin-bottom: 4px;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: $black-text-color;
+    }
+
+    &__desc-text{
+        font-size: 16px;
+        line-height: 1.88;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: $grey-text-link;
+    }
+
+    
+}

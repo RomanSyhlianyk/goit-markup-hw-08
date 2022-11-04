@@ -1,0 +1,45 @@
+.contacts{
+    display: none;
+
+    @media screen and (min-width:768px) {
+        margin-left: auto;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    @media screen and (min-width:1200px){
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+        
+    }
+
+   
+
+    &__link{
+        @include flex($gap:10px);
+        @include font(500,12px,14px,0.02em,$grey-text-link);
+        
+        @include transition;
+        &:focus,
+        &:hover{
+            color: $accent-color;
+        }
+
+        &:hover .contacts__icon,
+        &:focus .contacts__icon{
+            fill: $accent-color;
+        }  
+        
+        @media screen and(min-width:1200px) {
+            @include font(500, 14px, 16px, 0.02em, $grey-text-link);
+        }
+    }
+
+    &__icon{
+        fill: $grey-text-link;
+        @include transition($tp:fill);
+    }
+}

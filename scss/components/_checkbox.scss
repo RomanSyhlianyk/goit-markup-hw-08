@@ -1,0 +1,51 @@
+.checkbox{
+    opacity: 0;
+
+    &:checked + .checkbox__custom{
+        background-color: $accent-color;
+        border-color: transparent;
+    }
+
+    &:checked + .checkbox__custom .checkbox__icon{
+        opacity: 1;
+    }
+    
+    &__lable{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        cursor: pointer;
+        @media screen and (min-width:1200px){
+            font-size: 14px;
+            line-height: 1.71;
+        }
+    }
+
+    &__custom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 7px;
+        width: 16px;
+        height: 15px;
+        border: 2px solid $black-text-color;
+        border-radius: 2px;
+    }
+
+    &__icon{
+        display: flex;
+        opacity: 0;
+        fill: $white-text-color;
+    }
+
+    &__link{
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: $accent-color;
+    }
+}
+

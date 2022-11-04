@@ -1,0 +1,167 @@
+.modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    padding: 40px;
+    width: 450px;
+    height: 609px;
+    background-color: $bg-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition-property: scale;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width:1200px) {
+        width: 528px;
+        height: 581px;
+    }
+
+    &__close-button{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 8px;
+        top: 8px;
+        width: 30px;
+        height: 30px;
+        background-color: var(--bg-color);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:hover .modal__close-icon,
+        &:focus .modal__close-icon{
+            fill: $accent-color;
+        }
+    }
+
+    &__close-icon{
+        fill: $icon-black-color;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__form{
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    &__title{
+        text-align: center;
+        margin-bottom: 12px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+        color: $black-text-color;
+    }
+
+    &__lable{
+        margin-bottom: 4px;
+        margin-right: auto;
+        width: 100%;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        color: $grey-text-link;
+        cursor: pointer;
+        
+    }
+
+    &__input-box{
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    &__input{
+        padding-left: 42px;
+        height: 40px;
+        width: 100%;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition-property: border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+        outline: none;
+
+        &:hover,
+        &:focus{
+            border-color: $accent-color;
+        }
+    
+        &:hover + .modal__icon,
+        &:focus + .modal__icon{
+            fill: $accent-color;
+        }
+    
+    }
+
+    &__icon{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        left: 12px;
+        width: 18px;
+        height: 18px;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    }
+
+    &__area{
+        padding: 12px 16px;
+        margin-bottom: 20px;
+        height: 120px;
+        resize: none;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        
+        &::placeholder{
+            color: rgba(117, 117, 117, 0.5);
+        }
+    }
+
+    &__button-send{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 50px;
+        cursor: pointer;
+        letter-spacing: 0.06em;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        color: $white-text-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border-color: transparent;
+        background-color: $active-button-bg-color;
+        @include transition (box-shadow);
+
+        &:hover,
+        &:focus{
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+                    0px 2px 1px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+   
+
+    
+}

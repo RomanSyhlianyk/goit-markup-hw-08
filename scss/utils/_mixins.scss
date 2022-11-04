@@ -1,0 +1,20 @@
+@mixin flex($ai:center, $jc:null, $gap:null) {
+    display:flex;
+    align-items: $ai;
+    justify-content: $jc;
+    gap:$gap;
+}
+
+@mixin font($fw:400, $ws:14px, $lh:24px, $ls:0.03em, $clr: $grey-text-color) {
+    font-weight: $fw;
+    font-size: $ws;
+    line-height: calc($lh/$ws);
+    letter-spacing: $ls;
+    color: $clr;
+}
+
+@mixin transition($tp:color){
+    transition-property: $tp;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
