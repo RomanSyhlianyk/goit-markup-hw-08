@@ -44,16 +44,33 @@
         cursor: pointer;
         background-color: transparent;
         border:none;
+        &:focus .nav__icon-open,
+        &:hover .nav__icon-open{
+            fill: $accent-color;
+        }
+        &:focus .nav__icon-close,
+        &:hover .nav__icon-close{
+            fill: $accent-color;
+        }
 
         
         }
+
         @media screen and (min-width:768px) {
             display: none;
         }
 
     }
 
+    &__icon-close{
+        fill: $icon-black-color;
+            @include transition (fill);
+        }
     
+    &__icon-open{
+        fill: $icon-black-color;
+        @include transition (fill);   
+    }
 
     &__icon-close{
         display: none;

@@ -6,7 +6,7 @@
     background-color: var(--dark-bg-color);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
-    url(../../img/bg-img/header-img-480.jpg);
+    url(../img/bg-img/header-img-480.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@
         screen and (min-resolution: 2dppx){
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-        url(../../img/bg-img/header-img-480-2x.jpg);
+        url(../img/bg-img/header-img-480-2x.jpg);
                    
     }
     @media screen and (min-device-pixel-ratio: 3),
@@ -23,7 +23,7 @@
         screen and (min-resolution: 3dppx) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-        url(../../img/bg-img/header-img-480-3x.jpg);
+        url(../img/bg-img/header-img-480-3x.jpg);
             
     }
 
@@ -64,20 +64,20 @@
     @media screen and (min-width:768px){
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-        url(../../img/bg-img/header-img-768.jpg);
+        url(../img/bg-img/header-img-768.jpg);
         @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(../../img/bg-img/header-img-768-2x.jpg);
+            url(../img/bg-img/header-img-768-2x.jpg);
         }
         @media screen and (min-device-pixel-ratio: 3),
             screen and (min-resolution: 288dpi),
             screen and (min-resolution: 3dppx) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(../../img/bg-img/header-img-768-3x.jpg);
+            url(../img/bg-img/header-img-768-3x.jpg);
         }
               
     }
@@ -85,20 +85,20 @@
     @media screen and (min-width:1200px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-        url(../../img/bg-img/bg-img-hero.jpg);           
+        url(../img/bg-img/bg-img-hero.jpg);           
         @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(../../img/bg-img/bg-img-hero-2x.jpg);           
+            url(../img/bg-img/bg-img-hero-2x.jpg);           
         }
         @media screen and (min-device-pixel-ratio: 3),
             screen and (min-resolution: 288dpi),
             screen and (min-resolution: 3dppx) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(../../img/bg-img/bg-img-hero-3x.jpg);
+            url(../img/bg-img/bg-img-hero-3x.jpg);
         }
     
     }
